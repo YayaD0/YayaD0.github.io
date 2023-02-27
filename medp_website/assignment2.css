@@ -1,0 +1,18 @@
+body{
+    background-color: #6B7A8F;
+}
+
+
+h1{
+    text-align: center;
+}
+
+
+.frame{
+    width: 12em;
+    border: 1px solid #f58;
+    background-color: #F7882F;
+    padding: 8px 12px;
+
+    background-image: url('test123.jpeg');
+}
