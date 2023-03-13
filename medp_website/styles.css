@@ -21,10 +21,15 @@ h3 {color: #323232;
 		font-size: 22px;
 }
 
+.contaner {
+	flex: auto;
+}
 
 p { color: #323232;}
 
 /*Colors used: Beige (#DDD0C8), dark grey (#323232)/*
+
+
 
 
 
