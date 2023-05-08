@@ -1,0 +1,39 @@
+
+body {
+    background-color: #b35db0;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+    color: #143936;
+    
+}
+
+h2 {
+    color: #143936;
+
+}
+
+.new {
+    color: #143936;;
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder; 
+}
+
+.r {
+    color: #215954;
+    font-family: 'Work Sans', sans-serif;    
+    font-weight: bolder;
+}
+
+
+img {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+
+}
