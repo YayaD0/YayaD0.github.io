@@ -1,0 +1,85 @@
+body{
+    background-color:#1f2833 ;
+    color: #c5c6c7;
+
+
+}
+
+h1{
+    text-align: center;
+    padding-top: 3%;
+    font-size: 50px;
+    color: #45a29e;
+
+}
+
+p {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+
+
+
+}
+
+.fadein{
+    transition-timing-function: ease;
+    animation: fade infinite alternate ease 5s;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
+}
+
+.bouncing-ball {
+    display: flex;
+    padding: 30px;
+    min-height: 200px;
+    justify-content: center;
+}
+
+.ball {
+    margin: 0;
+    border-radius: 3px;
+    width: 100px;
+    height: 60px;
+    background-color: #66fcf1;
+    animation: bounceball 1.6s ease-in-out 0s infinite alternate;
+}
+
+@keyframes bounceball {
+	0% {
+		transform: translateY(-100px); 
+	}
+	
+	10% { 
+		width: 40px;
+		height: 60px;
+	}
+	
+	50% { 
+		width: 120px;
+		height: 20px;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		        transform: translateY(170px);
+	}
+}
+
+.two .shape {
+    animation: two 5s infinite ease-out;
+    transform-origin: 50% 7em;
+  }
+  
+  .two .surface {
+    background: #000;
+    width: 8em;
+    height: 1em;
+    position: absolute;
+    top: calc(50% + 4em);
+    left: calc(50% - 3em);
+  }
+  
+ 
