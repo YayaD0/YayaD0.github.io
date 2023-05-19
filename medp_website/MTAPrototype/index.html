@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTA Community Project</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+<!--This is the Navbar-->
+    <nav>
+        <h2><img src="imgs/MTA_NYC_logo.svg.png" class="Logo" alt="MTA Logo" width="32" height="30"></h2>
+        <ul>
+            <li><a href="About.html">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <h1 id="indexh1">MTA COMMUNITY PROTOTYPE PROJECT</h1>
+
+    <div class="search-form"> <center>
+        <h3>Search by train location</h3>
+        <input type="text" id="location" placeholder="Enter location">
+        <button class="button" id="searchButton">Search</button>
+
+    </center></div>
+
+      <center><div id="result"></div></center>
+
+
+<script>
+    // Demo data
+    const data = [
+      `stop_time_update {
+              arrival {
+                  time: 1683911201
+              }
+              departure {
+                  time: 1683911201
+              }
+              stop_id: "614N"
+          }`,
+      `stop_time_update {
+              arrival {
+                  time: 1683911321
+              }
+              departure {
+                  time: 1683911321
+              }
+              stop_id: "613N"
+          }`,
+      `stop_time_update {
+              arrival {
+                  time: 1683911411
+              }
+              departure {
+                  time: 1683911411
+              }
+              stop_id: "612N"
+          }`,
+    ];
+
+    // Handle feedback submission
+    $("#feedbackButton").click(function () {
+      let feedback = $("#feedback").val();
+      alert("Your feedback has been submitted. Thank you!");
+      $("#feedback").val("");
+    });
+
+    // Handle search
+    $("#searchButton").click(function () {
+      let location = $("#location").val();
+      $("#result").html(
+        "<h3>Results for location: " +
+          location +
+          "</h3><pre>" +
+          data.join("\n\n") +
+          "</pre>"
+      );
+      $("#location").val("");
+    });
+  </script>
+    
+</body>
+</html>
+
