@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css">
+    <link href="styles.css" rel="stylesheet" >
+    <link rel="icon" href="/img_assests/download.png"> 
+    <title>Yaya's Portfolio</title>
+</head>
+
+<body>
+
+  <div id="fullpage">
+    <section class="section s1">
+
+
+      <!---<div class="navb"> 
+            <nav> 
+             <div id="header"><img src="/img_assests/Y-no-bg.png" class="Logo" alt="Logo" width="80" height="80"></div>
+             <ul>
+               <li><a href="#c1"> Home </a></li>            
+               <li><a href="#c2">About Me</a></li>
+               <li><a href="#c3"> Projects </a></li>
+               <li><a href="#c4">Contact</a></li>
+              </ul>
+           </nav>
+        </div> -->
+
+
+   
+        <div class="headingc">
+
+          <div class="intro">"Hello World" I'm Yaya.</div>
+
+          <div class="image">
+            <img src="/img_assests/portrait.jpg" alt="Portrait">
+          </div>
+   
+          <div class="rotate">A <span class="rotating"></span> </div>
+
+        </div>
+   
+        <div class="search">Looking for a job or internship.</div>
+       
+        <div class="intro2">"This Is My Portfolio."</div>
+
+   
+    </section>
+
+    <section class="section s2">
+     <div id="about_me">
+
+
+         <h1 class="introgreen"> Langauges/Skills</h1>
+         <h1 class="vbar-black"> | </h1>
+
+
+        <div class="about_container">
+
+          <div class="about_language_H"> Progamming Language(s): </div>
+
+
+          <div class="about_logo">
+           <img src="/img_assests/Python_icon.svg.png" alt="Python" height="30" >
+           <p class="l_type">Python</p>
+          </div>
+
+          <div class="about_logo">
+           <img src="/img_assests/C++.png" alt="C++" height="30">
+          </div>
+
+          <div class="about_logo">
+           <img src="/img_assests/sql-server.png" alt="Sql" height="34">
+           <p class="l_type">SQL</p>
+          </div>
+  
+   
+
+          <div class="about_language_H"> Markup Language(s):</div>
+
+          <div class="about_logo">
+           <img src="/img_assests/html.png" alt="Html" height="40">
+           <p class="l_type">HTML</p>
+          </div>
+
+          <div class="about_logo">
+           <img src="/img_assests/css-3.png" alt="CSS" height="40">
+           <p class="l_type">CSS</p>
+          </div>
+
+          <div class="about_logo">
+           <img src="/img_assests/js.png" alt="CSS" height="40">
+           <p class="l_type">Javascript</p>
+          </div>
+
+          <div class="about_language_H"> Certification(s): </div>
+
+          <div class="about_logo">
+           <p class="l_type">Google Data Analytics Certificate</p>
+          </div>
+    
+          <div class="about_language_H"> Software(s): </div>
+
+          <div class="about_logo">
+           <img src="/img_assests/Microsoft_Suite.png" alt="MS" height="40">
+           <p class="l_type">Microsoft Office (Excel, Word, Powerpoint)</p>
+          </div>
+      </div>
+
+
+     </div>
+    </section>
+
+ 
+    <section class="section s3">
+
+     <div id="c3">
+        <h1> PROJECTS</h1>
+        <h1 class="vbar"> | </h1>  
+         
+        <p id="update"> Update In Progress......</p>
+     </div>
+    </section>
+
+    <section class="section s4">
+      <div id="c4">
+
+
+
+        <h1 class="introgreen"> Contact Me </h1>
+        <h1 class="vbar-black"> | </h1>
+
+
+     <h2 id="click_info">Click On Icon To Be Directed To Link</h2>
+        
+     <div class="row">
+        <div class="column">
+         <a href="https://www.linkedin.com/in/yayad0/"> <img height="140" alt="linkedin" src="/img_assests/linkedin.png"></a>
+         <p class="contact_d">LinkedIn</p>
+        </div>
+        
+        <div class="column">
+         <a href="//github.com/YayaD0"><img width="130" alt="Github" src="/img_assests/Github.png"></a>
+         <p class="contact_d">Github</p>
+        </div>
+
+        <div class="column">
+         <a href="mailto:Yayalyd4@gmail.com"><img width="130" alt= "yayalyd4@gmail.com" src="img_assests/email.png"></a>
+         <p class="contact_d">Yayalyd4@gmail.com</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+</div>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".rotating", {
+            strings: ["Computer Science Major", "Programmer", "Web Developer", "Data Analyst"],
+            typeSpeed: 200,
+            backSpeed: 200,
+            loop: true,
+        }) 
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
+    <script>
+      new fullpage('#fullpage', {
+      autoScrolling: true,
+    });</script>
+
+   
+</body>
+</html>
